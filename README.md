@@ -1,11 +1,3 @@
-# warehouse-digital-twin
-
-ashish:
-like write your intersts here
-
-
-
-
 
 ataul:
 
