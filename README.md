@@ -16,11 +16,9 @@ https://learn.microsoft.com/en-us/samples/azure-samples/iot-telemetry-simulator/
 
 project i am doing:
 
-IoT Data Processing:
+Building a scalable messaging infrastructure using RabbitMQ: 
 
-Create an application that processes and analyzes data from Internet of Things (IoT) devices in real-time.
-Use Azure IoT Hub for device connectivity, Azure Functions for serverless processing, and Kubernetes for managing containerized analytics workloads.
-
+You can use RabbitMQ with Kubernetes to create a scalable and fault-tolerant messaging infrastructure. You can use Terraform to deploy RabbitMQ on Kubernetes and manage the desired state of RabbitMQ resources.
 
 
 
