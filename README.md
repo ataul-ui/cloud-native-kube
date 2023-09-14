@@ -1,18 +1,25 @@
 
 ataul:
 
-new change
 
-little test
+## run the terraform 
+To run the terraform run these bash commands
+```bash
+terraform plan -var serviceprinciple_id=$SERVICE_PRINCIPAL \
+    -var serviceprinciple_key="$SERVICE_PRINCIPAL_SECRET" \
+    -var tenant_id=$TENTANT_ID \
+    -var subscription_id=$SUBSCRIPTION
+```
 
-let me focus on using terraform to configure the azure iot simulated devices, 
-I'll use kubernetes later on to store them in containers or something
+the app.py file will be the container thing
 
-get the containers to injest the iot data from somewhere else and maybe even a frontend container
-to and orchestrate them using azure kubernetes. This way I won't have to spend time building containers.
+I rabbitmq container will handle communication between 3 other containers, basically look at this video:
+https://www.youtube.com/watch?v=nFxjaVmFj5E&ab_channel=Amigoscode
 
-https://learn.microsoft.com/en-us/samples/azure-samples/iot-telemetry-simulator/azure-iot-device-telemetry-simulator/
-^^ use this to simulate iot data
+this is an event bassed microservices container thing project
+
+follow this tutorial: https://www.youtube.com/watch?v=_lpDfMkxccc&ab_channel=ThatDevOpsGuy 
+
 
 project i am doing:
 
@@ -23,10 +30,7 @@ You can use RabbitMQ with Kubernetes to create a scalable and fault-tolerant mes
 
 
 
-also I'll use github codespaces for this project, this is great!
-honestly github codespaces would be perfect since I'll be doing everything on the cloud using terraform.
 
-^^ I mean thats good but for now I'll just do coding in my local computer, its probably just easier, and I'll include the terraform code in the github actions file.
 
 
 Use kubernetes in some way in this projects.
@@ -35,8 +39,7 @@ Use argoCD instead of github actions maybe
 
 
 
-I'll use this tutorial basically: https://medium.com/microsoftazure/the-seeing-raspberry-pi-3d66afc4a536
-^^ use terraform basically, show I know what I am doing
+
 
 
 
