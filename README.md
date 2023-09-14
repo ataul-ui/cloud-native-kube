@@ -13,6 +13,8 @@ terraform plan -var serviceprinciple_id=$SERVICE_PRINCIPAL \
 
 the app.py file will be the container thing
 
+build a simple container and upload it to dockerhub
+
 I rabbitmq container will handle communication between 3 other containers, basically look at this video:
 https://www.youtube.com/watch?v=nFxjaVmFj5E&ab_channel=Amigoscode
 
