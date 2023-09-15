@@ -11,9 +11,18 @@ terraform plan -var serviceprinciple_id=$SERVICE_PRINCIPAL \
     -var subscription_id=$SUBSCRIPTION
 ```
 
+## pull the rabbitmq image
+This will pull the rabbitmq image to use
+```bash
+docker pull rabbitmq
+
+```
+
 
 create a rabbitmq docker thing for learning about it before moving on to kubernetes, follow this tutorial:
 https://www.youtube.com/watch?v=hfUIWe1tK8E&t=1s&ab_channel=ThatDevOpsGuy 
+^^ also instead of creating a fastapi container, create a golang app using the 
+code that devops guy uses
 
 
 the app.py file will be the container thing

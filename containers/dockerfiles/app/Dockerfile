@@ -2,10 +2,10 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /src
 
 # Copy the FastAPI app code into the container
-COPY . /app
+COPY app.py /src
 
 # Install any additional dependencies if needed
 # RUN pip install ...
