@@ -5,7 +5,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 WORKDIR /app
 
 # Copy the FastAPI app code into the container
-COPY ./ /app
+COPY . /app
 
 # Install any additional dependencies if needed
 # RUN pip install ...
