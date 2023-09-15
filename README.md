@@ -11,6 +11,11 @@ terraform plan -var serviceprinciple_id=$SERVICE_PRINCIPAL \
     -var subscription_id=$SUBSCRIPTION
 ```
 
+
+create a rabbitmq docker thing for learning about it before moving on to kubernetes, follow this tutorial:
+https://www.youtube.com/watch?v=hfUIWe1tK8E&t=1s&ab_channel=ThatDevOpsGuy 
+
+
 the app.py file will be the container thing
 
 gonna skip building the docker container for now
