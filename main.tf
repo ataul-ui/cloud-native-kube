@@ -18,6 +18,7 @@ provider "azurerm" {
   skip_provider_registration = true
 }
 
+
 module "cluster" {
   source                = "./modules/cluster/"
   serviceprinciple_id   = var.serviceprinciple_id

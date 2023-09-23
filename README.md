@@ -19,6 +19,17 @@ docker pull rabbitmq
 ```
 
 
+THIS WILL BE A MULTI-CONTAINER POD, AKA A POD WITH CONSUMER, PUBLISHER AND RABBITMQ CONTAINERS
+
+
+
+
+just write a golang app instead of the fastapi app, i'll need to focus on kube in this project not containers
+
+after creating the containers upload them to the azure docker registry so that aks can use it later on
+provide instructions on how to do that on readme
+
+
 create a rabbitmq docker thing for learning about it before moving on to kubernetes, follow this tutorial:
 https://www.youtube.com/watch?v=hfUIWe1tK8E&t=1s&ab_channel=ThatDevOpsGuy 
 ^^ also instead of creating a fastapi container, create a golang app using the 
@@ -27,9 +38,10 @@ code that devops guy uses
 
 the app.py file will be the container thing
 
-gonna skip building the docker container for now
+create the azure container registry using terraform and make sure it is in the same resource group as 
+aks and the virtual network
 
-build a simple container and upload it to dockerhub
+or maybe i only need to have same resource for container instance only, in that case container registry can be in another resource group
 
 I rabbitmq container will handle communication between 3 other containers, basically look at this video:
 https://www.youtube.com/watch?v=nFxjaVmFj5E&ab_channel=Amigoscode
@@ -63,33 +75,3 @@ Use argoCD instead of github actions maybe
 
 THIS WILL BE AN ENTIRELY AZURE CLOUD FOCUSED APP. NO NEED TO USE STREAMLIT OR ANY OTHER VENDOR NEUTRAL APP HERE.
 
-
-
-THIS IS PROJECT NOW, AMAZING IDEA, azure vision service creates a description, then the description gets routed to dalle or midjourney, which then returns an image, (I don't think I wanna bother with streamlit for this one). All of this will be deployed using terraform.
-
-dalle e api link: https://openai.com/blog/dall-e-api-now-available-in-public-beta
-
-
-
-basically show off how familiar I am with azure cloud services with this project. Y'know configure a few networking stuff, maybe some frontend stuff as well, (use terraform to make all this possible), then like deploy this or something. Definitely include this in the resume.
-
-
-The passwords and secrets and stuff will be stored in the azure key vault.
-
-
-I'll use terraform to configure all the azure cloud stuff. And I'll use github actions to automatically set it up.
-
-making changes testing
-
-writing again
-ONe more test
-
-the conda environment for this is "machine"
-
-testing one thing too
-
-I'll need to install requirements.txt file here
-
-I'll be using the custom vision thing to distinguish between different objects,
-what kind of objects? I don't know yet, but I'll figure it out as this project 
-progresses

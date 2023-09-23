@@ -1,8 +1,0 @@
-version: "3"
-services:
-  fastapi-app:
-    build: ./dockerfiles/app
-    volumes:
-      - ./app:/usr/local/fastapi/app
-    ports:
-      - "8000:80"  # Map the container's port 80 to host port 8000

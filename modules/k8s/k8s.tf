@@ -35,23 +35,16 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = "nginx:1.7.8"
-          name  = "example"
+          image = "ataulhaq234/publisher-rabbit"
+          name  = "publisher"
 
-          resources {
-            limits = {
-              cpu    = "0.5"
-              memory = "512Mi"
-            }
-            requests = {
-              cpu    = "250m"
-              memory = "50Mi"
-            }
+          port {
+            container_port = 8080
           }
 
           liveness_probe {
             http_get {
-              path = "/nginx_status"
+              path = "/"
               port = 80
 
               http_header {
@@ -64,24 +57,30 @@ resource "kubernetes_deployment" "example" {
             period_seconds        = 3
           }
         }
+
+        container {
+          image = "rabbitmq:3.8-management"
+          name = "rabbitmq-message-broker"
+
+          port {
+            container_port = 8080
+          }
+
+          liveness_probe {
+            http_get {
+              path = "/"
+              port = 80
+
+              http_header {
+                name  = "X-Custom-Header"
+                value = "Awesome"
+              }
+            }
+        }
+
+
       }
     }
-  }
-}
-
-resource "kubernetes_service" "example" {
-  metadata {
-    name = "terraform-example"
-  }
-  spec {
-    selector = {
-      test = "MyExampleApp"
     }
-    port {
-      port        = 80
-      target_port = 80
-    }
-
-    type = "LoadBalancer"
   }
 }

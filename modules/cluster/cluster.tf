@@ -17,17 +17,10 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
     type       = "VirtualMachineScaleSets"
     os_disk_size_gb = 250
   }
-
+ 
   service_principal  {
     client_id = var.serviceprinciple_id
     client_secret = var.serviceprinciple_key
-  }
-
-  linux_profile {
-    admin_username = "azureuser"
-    ssh_key {
-        key_data = var.ssh_key
-    }
   }
 
   network_profile {
