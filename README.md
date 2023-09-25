@@ -23,7 +23,7 @@ First you'll need to clone this repository:
 docker run -d --rm --net rabbits --hostname rabbit-1 --name rabbit-1 rabbitmq:3.8 
 ```
 
-then you'll to type these commands:
+Then you'll need to type these commands:
 ```bash
 terraform init
 
