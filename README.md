@@ -9,7 +9,7 @@ hhhh.
 ## Requirements
 Make sure you have terraform and azure cli installed. And save the following values as environment variables in your system
 ```bash
-SERVICE_PRINCIPAL = 'your azure app_id
+SERVICE_PRINCIPAL = 'your azure app_id'
 SERVICE_PRINCIPAL_SECRET = 'your azure password'
 TENTANT_ID = 'your tenant id'
 SUBSCRIPTION = 'you azure subscription'
