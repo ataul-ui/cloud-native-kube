@@ -20,7 +20,7 @@ SUBSCRIPTION = 'you azure subscription'
 
 First you'll need to clone this repository:
 ```bash
-docker run -d --rm --net rabbits --hostname rabbit-1 --name rabbit-1 rabbitmq:3.8 
+git clone https://github.com/ataul-ui/cloud-native-kube.git 
 ```
 
 Then you'll need to type these commands:
