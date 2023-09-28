@@ -7,7 +7,7 @@ variable "serviceprinciple_key" {
 }
 
 variable "location" {
-  default = "australiaeast"
+  default = "eastus"
 }
 
 variable "kubernetes_version" {
