@@ -2,7 +2,7 @@
 
 
 # cloud-native-kube
-In this project I've used terraform to configure an AKS (Azure Kubernetes Service) cluster and deployed an event-based microservice application in it.
+In this project I've used terraform to configure an AKS (Azure Kubernetes Service) cluster and deployed an event-based microservice application in it. ** For future work I can use helm charts instead of using the containers I built myself **
 
 
 
