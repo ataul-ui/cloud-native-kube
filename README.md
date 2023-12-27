@@ -4,7 +4,7 @@
 # cloud-native-kube
 In this project I've used terraform to configure an AKS (Azure Kubernetes Service) cluster and deployed an event-based microservice application in it. ** For future work I can pull from azure container registry instead of dockerhub, this way I can give permissions to the container to interact with other apps in azure, hmmm how about I get a c# container to send a message to another c# container in aks through azure function or event grid or AZURE API MANAGEMENT, this is a great event driven microservice architecture **
 
-** Use this link as a tutorial [Use Azure API Management with microservices deployed in Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes)
+** Use this link as a tutorial [Use Azure API Management with microservices deployed in Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes)  **
 
 
 
