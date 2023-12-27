@@ -8,6 +8,8 @@ In this project I've used terraform to configure an AKS (Azure Kubernetes Servic
 
 ** IDEA: one c# container inside akswill send a json message to the azure API management which will then send a notification alert to my email, email will be in the kubernetes/terraform script **
 
+** also create seperate branches for terraform prototyping different parts of this project such as Azure API management, AKS, etc. **
+
 
 
 ## Requirements
