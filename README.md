@@ -12,6 +12,8 @@ In this project I've used terraform to configure an AKS (Azure Kubernetes Servic
 
 ** also create seperate branches for terraform prototyping different parts of this project such as Azure API management, AKS, etc. **
 
+** finally the UML diagram for this will be comprehensive combining the system design of this repository, [cloud native frontend repository](https://github.com/ataul-ui/dot-net-containers), and [distributed data pipeline repository](https://github.com/ataul-ui/backend-early-alzheimers)
+
 
 
 ## Requirements
