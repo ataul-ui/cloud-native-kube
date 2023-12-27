@@ -6,6 +6,8 @@ In this project I've used terraform to configure an AKS (Azure Kubernetes Servic
 
 ** Use this link as a tutorial [Use Azure API Management with microservices deployed in Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes)  **
 
+** IDEA: one c# container inside akswill send a json message to the azure API management which will then send a notification alert to my email, email will be in the kubernetes/terraform script **
+
 
 
 ## Requirements
